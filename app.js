@@ -19,3 +19,11 @@ let SuggesttionsSlider = new Swiper(".mySuggestion", {
   spaceBetween: 30,
   grabCursor: true,
 });
+
+let minImage = new Swiper(".min-image", {
+  slidesPerView: 7,
+  initialSlide: 2,
+  centeredSlides: true,
+  spaceBetween: 30,
+  grabCursor: true,
+});
