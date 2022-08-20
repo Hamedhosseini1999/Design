@@ -1,29 +1,15 @@
-let swiper = new Swiper(".mySwiper", {
-  cssMode: true,
-  loop: true,
-  navigation: {
-    nextEl: ".swiper-button-next",
-    prevEl: ".swiper-button-prev",
-  },
-  pagination: {
-    el: ".swiper-pagination",
-  },
-  mousewheel: true,
-  keyboard: true,
+const menu = document.querySelector(".nav-mobile");
+const btnNav = document.getElementById("drop");
+const dropDown = document.querySelector(".dropdown-container");
+const bars = document.querySelectorAll(".hamburger");
+
+// Drop Down
+btnNav.addEventListener("click", (e) => {
+  dropDown.classList.toggle("active");
 });
 
-let SuggesttionsSlider = new Swiper(".mySuggestion", {
-  slidesPerView: 4,
-  initialSlide: 2,
-  centeredSlides: true,
-  spaceBetween: 30,
-  grabCursor: true,
-});
-
-let minImage = new Swiper(".min-image", {
-  slidesPerView: 7,
-  initialSlide: 2,
-  centeredSlides: true,
-  spaceBetween: 30,
-  grabCursor: true,
+bars.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    menu.classList.toggle("active");
+  });
 });

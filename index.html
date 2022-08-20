@@ -24,11 +24,13 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="responseive.css" />
   </head>
   <body>
     <!-- Header -->
     <header class="header" id="header">
       <div class="container">
+        <!-- Navbar laptop -->
         <navbar id="navbar" class="navbar">
           <ul class="navbar-list">
             <a href="#">
@@ -70,6 +72,57 @@
             </li>
           </ul>
         </navbar>
+        <navbar class="nav-mobile">
+          <div class="close hamburger">
+            <i class="fa-solid fa-x"></i>
+          </div>
+          <div class="search">
+            <input
+              type="text"
+              placeholder="نام محصول مورد نظر خود را وارد کنید"
+            />
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </div>
+          <ul class="b-list">
+            <li class="b-list-item">
+              <a href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-bag-shopping"></i>
+                  <span id="badge">۵</span>
+                </div>
+                سبد خرید
+              </a>
+            </li>
+            <li>
+              <div href="#" class="drop" id="drop">
+                <div class="icon">
+                  <i class="fa-solid fa-user"></i>
+                </div>
+                <span> حساب کاربری </span>
+                <i class="fa fa-caret-down"></i>
+              </div>
+            </li>
+            <ul class="dropdown-container">
+              <li>
+                <a href="#">ورود به حساب کاربری</a>
+              </li>
+              <li>
+                <a href="#">عضویت درسایت</a>
+              </li>
+            </ul>
+            <li>
+              <a href="#">
+                <div class="icon">
+                  <i class="fa-solid fa-phone"></i>
+                </div>
+                <span>۰۲۱-۸۹۶۵۴۳۲</span>
+              </a>
+            </li>
+          </ul>
+        </navbar>
+        <div class="hamburger">
+          <i class="fa-solid fa-bars"></i>
+        </div>
         <div class="search-logo">
           <div class="search">
             <input
@@ -493,7 +546,7 @@
         </div>
       </section>
       <!-- Next Section -->
-      <section id="service" class="service">
+      <section id="service" class="service service-1">
         <div class="container">
           <div class="sanitary">
             <div class="head-line">
@@ -593,7 +646,7 @@
         </div>
       </section>
       <!-- Next Catogory -->
-      <section id="service" class="service">
+      <section id="service" class="service service-2">
         <div class="container">
           <div class="sanitary">
             <div class="head-line">
@@ -1043,6 +1096,7 @@
     </footer>
     <!-- Swiper JS -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <script src="Slider.js"></script>
     <script src="app.js"></script>
   </body>
 </html>

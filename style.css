@@ -52,6 +52,20 @@ section:not(.not) {
 .navbar {
   width: 40%;
 }
+.nav-mobile {
+  display: none;
+}
+.close {
+  color: #fff;
+  text-align: left;
+  font-size: 1.5rem;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+.hamburger {
+  display: none;
+}
+
 .navbar .navbar-list {
   display: flex;
   flex-direction: row-reverse;
@@ -196,6 +210,7 @@ ul.dropdown-list li.border-bottom {
 .showcase-tags_item span {
   color: #fff;
   font-weight: 500;
+  font-size: 0.8rem;
 }
 
 .showcase-slider {
@@ -251,7 +266,6 @@ ul.dropdown-list li.border-bottom {
 .corner {
   width: 33%;
   height: 200px;
-
   background: linear-gradient(to right, white 2px, transparent 2px) 0 0,
     linear-gradient(to right, white 2px, transparent 2px) 0 100%,
     linear-gradient(to left, white 2px, transparent 2px) 100% 0,
