@@ -432,24 +432,6 @@ ul.dropdown-list li.border-bottom {
   text-decoration-thickness: 1px;
 }
 
-.off {
-  width: 100%;
-  height: 40px;
-  text-align: center;
-  position: absolute;
-  bottom: 0;
-  left: 50%;
-  transform: translateX(-50%);
-  background: url(./images/icons/Path\ 17.png) no-repeat;
-  background-position: center center;
-  background-size: 67% 40px;
-  display: grid;
-  place-content: center;
-  font-size: 0.9rem;
-  color: #e64545;
-  z-index: 1;
-}
-
 .suggestion-time {
   text-align: center;
   padding: 10px 0;
@@ -697,7 +679,7 @@ ul.dropdown-list li.border-bottom {
   bottom: 0;
   left: 50%;
   transform: translateX(-50%);
-  background: url(./images/icons/Path\ 17.png) no-repeat;
+  background: url(../images/tape.png) no-repeat;
   background-position: center center;
   background-size: 67% 40px;
   display: grid;
